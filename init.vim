@@ -1,3 +1,5 @@
+"  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -18,7 +20,7 @@ set t_Co=256
 autocmd vimenter * NERDTree
 autocmd vimenter * wincmd p
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-colorscheme base16-ateliersulphurpool
+colorscheme base16-AtelierCaveDark
 syntax on
 :setlocal foldmethod=syntax
 hi Type cterm=bold

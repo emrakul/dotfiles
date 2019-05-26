@@ -20,7 +20,7 @@ set t_Co=256
 autocmd vimenter * NERDTree
 autocmd vimenter * wincmd p
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-colorscheme base16-AtelierCaveDark
+
 syntax on
 :setlocal foldmethod=syntax
 hi Type cterm=bold
@@ -28,3 +28,4 @@ nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 vnoremap <Space> zf
 let g:airline_powerline_fonts = 1
 set background=dark
+colorscheme base16-AtelierCaveDark
